@@ -1,0 +1,70 @@
+/* 1. Element Selector & Background color */
+body {
+    background-color: #f0f4f8; /* Đổi màu nền của trang */
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 40px;
+}
+
+/* 2. ID Selector - Căn giữa tiêu đề h1 */
+#main-title {
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #1a365d;
+    font-size: 32px;
+}
+
+/* 3. Class Selector - Đoạn văn mô tả */
+.description {
+    text-align: center;
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #2b6cb0;
+}
+
+/* 4. Grouping & Class Selectors - Định dạng danh sách với màu sắc khác nhau */
+.hobby-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.hobby-list .hobby-item:nth-child(1) {
+    color: #e53e3e; /* Đỏ */
+    font-weight: bold;
+}
+
+.hobby-list .hobby-item:nth-child(2) {
+    color: #319795; /* Xanh ngọc */
+    font-weight: bold;
+}
+
+.hobby-list .hobby-item:nth-child(3) {
+    color: #d69e2e; /* Vàng cam */
+    font-weight: bold;
+}
+
+/* 5. Pseudo-class :hover - Nút bấm và hiệu ứng di chuột */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#btn-click {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+#btn-click:hover {
+    background-color: #2b6cb0; /* Đổi màu khi rê chuột */
+    transform: scale(1.05);     /* Phóng to nhẹ nút bấm */
+}
